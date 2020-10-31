@@ -7,6 +7,12 @@
     * JUnit Testing
 * **Description**
     * Create a console-based application which functions as a Scientific Calculator.
+    * You are provided with several classes, and the method signatures necessary to achieve the desired application.
+    * Below is a brief demonstration of how this application works upon cloning it.
+
+### Demonstration
+<img src="./VIEWME.gif"> 
+
 
 ## Calculator Features
 
