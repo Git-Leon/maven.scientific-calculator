@@ -1,15 +1,80 @@
 # Project Title
+* **Objective** - To create an application which functions as a Scientific Calculator.
+* **Purpose** - To gain familiarity the following features:
+    * Input / Output
+    * Object Orientation
+    * Object Relations
+    * JUnit Testing
+* **Description**
+    * Create a console-based application which functions as a Scientific Calculator.
 
-* **Objective** - To create a product...
-* **Purpose** - To gain familiarity the following features...
+## Calculator Features
+
+### Basic calculator Features
+* `Double add(Double baseValue, Double valueToAddToBaseValue)`
+    * return the _sum_ of two values
+* `Double subtract(Double basValue, Double valueToSubtractFromBaseValue)`
+    * return the _difference_ of two values
+* `Double multiply(Double multiplicand, Double multiplier)`
+    * return the _product_ of two values
+* `Double divide(Double divisor, Double dividend)`
+    * return the _quotient_ of two values
+* `Double square(Double valueToBeSquared)`
+    * return the _square_ of a specified value
+* `Double power(Double baseValue, Double exponent)`
+    * return `baseValue` raisied to the `exponent` power
+* `Double inverse(Double valueToBeInverted)`
+    * return `valueToBeInverted` raised to the negative one power
+* `Double invertSign(Double valueToBeInverted)`
+    * return `valueToBeInverted` multiplied by negative one.
 
 
+### Display Features
+* `String getDisplayValue()`
+    * retrieve the current value presented on the display
+* `void clearDisplayValue()`
+    * clear the value presented on the display
+* `void updateDisplayValue(String valueToBeUpdated)`
+    * update the displayed value to the specified `valueToBeUpdated`
+* `void switchDisplayModeToBinary()`
+    * convert the displayed value to an expression in base two
+* `void switchDisplayModeToOctal()`
+    * convert the displayed value to an expression in base eight
+* `void switchDisplayModeToDecimal()`
+    * convert the displayed value to an expression in base ten
+* `void switchDisplayModeToHexadecimal()`
+    * convert the displayed value to an expression in base sixteen
+* `void switchDisplayModeToDegrees()`
+    * convert the displayed value to degrees
+* `void switchDisplayModeToRadians()`    
+    * convert the displayed value to radians
+    
+### Memory Features
+* `void storeValue(Double valueToBeStored)`
+    * mutates the `storedValue` field
+* `Double getStoredValue()`
+    * return the `storedValue` field
+* `void addCurrentDisplayValueToStoredValue()`
+    * mutates the `displayedValue` to the _sum_ of `displayedValue` and `storedValue`
 
-
-## Objective
-
-#### Part 1 - ...
-* Ensure that all test cases in `com.github.curriculeon` pass with 100% success rate. 
+### Trignometric Features
+* `Double sine(Double valueToComputeSineOf)`
+    * return the computed sine of `valueToComputeSineOf`
+* `Double cosine(Double valueToComputeCosineOf)`
+    * return the computed cosine of `valueToComputeCosineOf`
+* `Double tangent(Double valueToComputeTangentOf)`
+    * return the computed tangent of `valueToComputeTangentOf`
+* `Double inverseSine(Double valueToComputeInverseSineOf)`
+    * return the computed inverse-sine of `valueToComputeInverseSineOf`
+* `Double inverseCosine(Double valueToComputeInverseCosineOf)`
+    * return the computed inverse-cosine of `valueToComputeInverseCosineOf`
+* `Double inverseCosine(Double valueToComputeInverseTangentOf)`
+    * return the computed inverse-tangent of `valueToComputeInverseTangentOf`
+    
+### Logarithmic Features
+* `Double log(Double valueToComputeLogOf)`
+* `Double naturalLog(Double valueToComputeNaturalLogOf)`
+* `Double inversNaturalLog(Double valueToComputeInverseNaturalLogOf)`
 
 
 
