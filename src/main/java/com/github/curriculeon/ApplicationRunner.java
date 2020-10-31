@@ -123,7 +123,7 @@ public class ApplicationRunner implements Runnable {
         IOConsole console = new IOConsole(IOConsole.AnsiColor.GREEN);
         console.println("Welcome to the trigonometric-menu.");
         console.println("From here, you can select any of the following options:");
-        String options = "[sine, cosine, tangent, inverseSine, inverseCosine, inverseTangent]";
+        String options = "[sine, cosine, tangent, inverse-sine, inverse-sosine, inverse-tangent]";
         String userInput = console.getStringInput(options);
         switch (userInput) {
             case "sine":
@@ -138,14 +138,14 @@ public class ApplicationRunner implements Runnable {
                 calculator.computeTangent();
                 break;
 
-            case "inverseSine":
+            case "inverse-sine":
                 calculator.computeInverseSine();
                 break;
 
-            case "inverseCosine":
+            case "inverse-cosine":
                 calculator.computeInverseCosine();
                 break;
-            case "inverseTangent":
+            case "inverse-tangent":
                 calculator.computeInverseTangent();
                 break;
 
