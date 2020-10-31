@@ -8,18 +8,18 @@ public class ApplicationRunner implements Runnable {
 
         console.println("Welcome to the main-menu application.");
         console.println("From here, you can select any of the following options:");
-        String options = "[off, compute, change-base, show-display, clear-display]";
+        String options = "[off, change-base, compute, show-display, clear-display]";
         String userInput;
         loop_label:
         while (true) {
             userInput = console.getStringInput(options);
             switch (userInput) {
-                case "compute":
-                    triggerComputeMenuSelection();
-                    break;
-
                 case "change-base":
                     triggerChangeBaseMenuSelection();
+                    break;
+
+                case "compute":
+                    triggerComputeMenuSelection();
                     break;
 
                 case "clear-display":
