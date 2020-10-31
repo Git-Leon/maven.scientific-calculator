@@ -15,6 +15,7 @@ public class Calculator {
     public Calculator() {
         this(new CalculatorEngine(), new CalculatorDisplay());
     }
+
     public void clearDisplay() {
 
     }
