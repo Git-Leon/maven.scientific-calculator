@@ -1,6 +1,6 @@
 package com.github.curriculeon;
 
-public class ApplicationRunner implements Runnable {
+public class ApplicationRunner {
     private Calculator calculator = new Calculator();
 
     public void run() {
