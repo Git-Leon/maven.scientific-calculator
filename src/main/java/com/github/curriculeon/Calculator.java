@@ -79,4 +79,8 @@ public class Calculator {
     public void convertToHexadecimalBase() {
 
     }
+
+    public void display() {
+
+    }
 }

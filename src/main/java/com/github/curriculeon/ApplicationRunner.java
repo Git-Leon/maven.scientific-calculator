@@ -1,33 +1,45 @@
 package com.github.curriculeon;
 
 public class ApplicationRunner implements Runnable {
-    private IOConsole console = new IOConsole();
     private Calculator calculator = new Calculator();
 
     public void run() {
-        IOConsole console = new IOConsole();
+        IOConsole console = new IOConsole(IOConsole.AnsiColor.YELLOW);
+
         console.println("Welcome to the main-menu application.");
         console.println("From here, you can select any of the following options:");
-        String options = "[compute, change-base, clear-display]";
-        String userInput = console.getStringInput(options);
-        switch (userInput) {
-            case "compute":
-                triggerComputeMenuSelection();
-                break;
+        String options = "[off, compute, change-base, show-display, clear-display]";
+        String userInput;
+        loop_label:
+        while (true) {
+            userInput = console.getStringInput(options);
+            switch (userInput) {
+                case "compute":
+                    triggerComputeMenuSelection();
+                    break;
 
-            case "change-base":
-                triggerChangeBaseMenuSelection();
-                break;
+                case "change-base":
+                    triggerChangeBaseMenuSelection();
+                    break;
 
-            case "clear-display":
-                calculator.clearDisplay();
-                break;
+                case "clear-display":
+                    calculator.clearDisplay();
+                    break;
 
-            default:
-                console.println("Invalid input!");
-                console.println("Please try again!");
-                triggerComputeMenuSelection();
-                break;
+
+                case "show-display":
+                    calculator.display();
+                    break;
+
+                case "off":
+                    break loop_label;
+
+                default:
+                    console.println("Invalid input!");
+                    console.println("Please try again!");
+                    run();
+                    break;
+            }
         }
     }
 
@@ -154,15 +166,22 @@ public class ApplicationRunner implements Runnable {
         IOConsole console = new IOConsole(IOConsole.AnsiColor.BLUE);
         console.println("Welcome to the logarithmic-menu.");
         console.println("From here, you can select any of the following options:");
-        String options = "[log, naturalLog, inverseNaturalLog]";
+        String options = "[log, natural-log, inverse-natual-log]";
         String userInput = console.getStringInput(options);
         switch (userInput) {
-            case "":
+            case "log":
                 break;
+
+            case "natural-log":
+                break;
+
+            case "inverse-natual-log":
+                break;
+
             default:
                 console.println("Invalid input!");
                 console.println("Please try again!");
-                triggerComputeMenuSelection();
+                triggerComputeLogarithmic();
         }
     }
 }
