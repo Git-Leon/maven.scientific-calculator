@@ -7,10 +7,10 @@
     * JUnit Testing
 * **Description**
     * Create a console-based application which functions as a Scientific Calculator.
-    * You are provided with several classes, and the method signatures necessary to achieve the desired application.
-    * Below is a brief demonstration of how this application works upon cloning it.
+    * You are provided with several classes, and the method signatures necessary to achieve the desired application.    
 
 ### Demonstration
+* Below is a brief demonstration of how this application works upon cloning it.
 [<img src="./VIEWME.gif">](https://raw.githubusercontent.com/Git-Leon/maven.scientific-calculator/master/VIEWME.gif) 
 
 
