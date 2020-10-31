@@ -11,7 +11,7 @@
     * Below is a brief demonstration of how this application works upon cloning it.
 
 ### Demonstration
-<img src="./VIEWME.gif"> 
+[<img src="./VIEWME.gif">](https://raw.githubusercontent.com/Git-Leon/maven.scientific-calculator/master/VIEWME.gif) 
 
 
 ## Calculator Features
