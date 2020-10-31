@@ -5,13 +5,13 @@ public class ApplicationRunner {
 
     public void run() {
         IOConsole console = new IOConsole(AnsiColor.YELLOW);
-
-        console.println("Welcome to the main-menu application.");
-        console.println("From here, you can select any of the following options:");
-        String options = "[off, change-base, compute, show-display, clear-display]";
         String userInput;
-        loop_label:
+
+        loop_label: // this label allows us to break out of the loop from within the switch-case statement
         while (true) {
+            console.println("Welcome to the main-menu application.");
+            console.println("From here, you can select any of the following options:");
+            String options = "[off, change-base, compute, show-display, clear-display]";
             userInput = console.getStringInput(options);
             switch (userInput) {
                 case "change-base":
