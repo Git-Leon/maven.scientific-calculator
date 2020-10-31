@@ -1,6 +1,6 @@
 package com.github.curriculeon;
 
-public class MyObject implements Runnable {
+public class ApplicationRunner implements Runnable {
     public void run() {
         // TODO
     }

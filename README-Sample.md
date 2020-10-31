@@ -1,4 +1,4 @@
-# Project Title
+# Calculator Display
 * **Objective** - To create an application which functions as a Scientific Calculator.
 * **Purpose** - To gain familiarity the following features:
     * Input / Output
