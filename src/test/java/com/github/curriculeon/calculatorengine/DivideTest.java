@@ -13,7 +13,7 @@ public class DivideTest {
         CalculatorEngine calculatorEngine = new CalculatorEngine();
 
         // when
-        Double actualValue = calculatorEngine.add(firstValue, secondValue);
+        Double actualValue = calculatorEngine.divide(firstValue, secondValue);
 
         // then
         Assert.assertEquals(expectedValue, actualValue);

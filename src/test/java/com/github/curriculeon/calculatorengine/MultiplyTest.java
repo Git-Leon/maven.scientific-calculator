@@ -13,7 +13,7 @@ public class MultiplyTest {
         CalculatorEngine calculatorEngine = new CalculatorEngine();
 
         // when
-        Double actualValue = calculatorEngine.add(firstValue, secondValue);
+        Double actualValue = calculatorEngine.multiply(firstValue, secondValue);
 
         // then
         Assert.assertEquals(expectedValue, actualValue);

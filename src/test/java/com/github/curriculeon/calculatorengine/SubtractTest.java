@@ -13,7 +13,7 @@ public class SubtractTest {
         CalculatorEngine calculatorEngine = new CalculatorEngine();
 
         // when
-        Double actualValue = calculatorEngine.add(firstValue, secondValue);
+        Double actualValue = calculatorEngine.subtract(firstValue, secondValue);
 
         // then
         Assert.assertEquals(expectedValue, actualValue);

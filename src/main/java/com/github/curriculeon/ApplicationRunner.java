@@ -5,6 +5,7 @@ public class ApplicationRunner implements Runnable {
     private Calculator calculator = new Calculator();
 
     public void run() {
+        IOConsole console = new IOConsole();
         console.println("Welcome to the main-menu application.");
         console.println("From here, you can select any of the following options:");
         String options = "[compute, change-base, clear-display]";
@@ -31,6 +32,7 @@ public class ApplicationRunner implements Runnable {
     }
 
     private void triggerChangeBaseMenuSelection() {
+        IOConsole console = new IOConsole(IOConsole.AnsiColor.CYAN);
         console.println("Welcome to the change-base-menu.");
         console.println("From here, you can select any of the following options:");
         String options = "[binary, octal, decimal, hexadecimal]";
@@ -56,6 +58,7 @@ public class ApplicationRunner implements Runnable {
     }
 
     private void triggerComputeMenuSelection() {
+        IOConsole console = new IOConsole(IOConsole.AnsiColor.PURPLE);
         console.println("Welcome to the compute-menu.");
         console.println("From here, you can select any of the following options:");
         String options = "[arithmetic, trigonometric, logarithmic]";
@@ -78,6 +81,7 @@ public class ApplicationRunner implements Runnable {
     }
 
     private void triggerComputeArithmetic() {
+        IOConsole console = new IOConsole(IOConsole.AnsiColor.BLUE);
         console.println("Welcome to the arithmetic-menu.");
         console.println("From here, you can select any of the following options:");
         String options = "[add, subtract, multiply, divide]";
@@ -104,6 +108,7 @@ public class ApplicationRunner implements Runnable {
 
 
     private void triggerComputeTrigonometric() {
+        IOConsole console = new IOConsole(IOConsole.AnsiColor.GREEN);
         console.println("Welcome to the trigonometric-menu.");
         console.println("From here, you can select any of the following options:");
         String options = "[sine, cosine, tangent, inverseSine, inverseCosine, inverseTangent]";
@@ -146,6 +151,7 @@ public class ApplicationRunner implements Runnable {
     }
 
     private void triggerComputeLogarithmic() {
+        IOConsole console = new IOConsole(IOConsole.AnsiColor.BLUE);
         console.println("Welcome to the logarithmic-menu.");
         console.println("From here, you can select any of the following options:");
         String options = "[log, naturalLog, inverseNaturalLog]";
